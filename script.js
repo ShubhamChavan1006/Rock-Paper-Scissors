@@ -9,7 +9,7 @@ function selectRock() {
 
   const computersChoice = getComputersChoice();
   computerChoiceContainer.innerHTML = "Computers choice : " + computersChoice;
-  
+
   checkWhoWon(userChioce, computersChoice);
 }
 
@@ -44,7 +44,7 @@ function checkWhoWon(usersChioce, computersChoice) {
     (usersChioce === "paper" && computersChoice === "rock") ||
     (usersChioce === "scissors" && computersChoice === "paper")
   ) {
-    resultContainer.innerHTML = "Result: Cong. You won!!";
+    resultContainer.innerHTML = "Result: Cong. You won🎉!!";
   } else if (
     (computersChoice === "rock" && usersChioce === "scissors") ||
     (computersChoice === "paper" && usersChioce === "rock") ||
