@@ -8,7 +8,7 @@ function selectRock() {
   userChoiceContainer.innerText = "Your choice : Rock (🪨)";
 
   const computersChoice = getComputersChoice();
-  computerChoiceContainer.innerHTML = "Computers choice : " + computersChoice;
+  computerChoiceContainer.innerHTML = "Computer Choice : " + computersChoice;
 
   checkWhoWon(userChioce, computersChoice);
 }
@@ -17,7 +17,7 @@ function selectPaper() {
   const userChioce = "paper";
   userChoiceContainer.innerText = "Your choice : Paper (📄)";
   const computersChoice = getComputersChoice();
-  computerChoiceContainer.innerHTML = "Computers choice : " + computersChoice;
+  computerChoiceContainer.innerHTML = "Computer Choice : " + computersChoice;
 
   checkWhoWon(userChioce, computersChoice);
 }
@@ -27,7 +27,7 @@ function selectScissors() {
   userChoiceContainer.innerText = "Your choice : Scissors (✂️)";
 
   const computersChoice = getComputersChoice();
-  computerChoiceContainer.innerHTML = "Computers choice : " + computersChoice;
+  computerChoiceContainer.innerHTML = "Computer Choice : " + computersChoice;
 
   checkWhoWon(userChioce, computersChoice);
 }
@@ -50,8 +50,9 @@ function checkWhoWon(usersChioce, computersChoice) {
     (computersChoice === "paper" && usersChioce === "rock") ||
     (computersChoice === "scissors" && usersChioce === "paper")
   ) {
-    resultContainer.innerHTML = "Result : You Lost...";
+    resultContainer.innerHTML = "Result : You Lost..😯";
   } else {
-    resultContainer.innerHTML = "Result : Draw";
-  }
-}
+    resultContainer.innerHTML = "Result : Draw 🫥";
+ }
+} 
+
