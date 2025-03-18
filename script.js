@@ -51,7 +51,7 @@ function checkWhoWon(usersChioce, computersChoice) {
     (computersChoice === "paper" && usersChioce === "rock") ||
     (computersChoice === "scissors" && usersChioce === "paper")
   ) {
-    resultContainer.innerHTML = "Result : You Lost..😯😭";
+    resultContainer.innerHTML = "Result : You Lost..😯";
   } else {
     resultContainer.innerHTML = "Result : Draw 🫥";
  }
