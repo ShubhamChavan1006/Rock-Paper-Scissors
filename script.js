@@ -2,7 +2,7 @@ const options = ["rock", "paper", "scissors"];
 const userChoiceContainer = document.getElementById("user-choice");
 const computerChoiceContainer = document.getElementById("computer-choice");
 const resultContainer = document.getElementById("result");
-
+//
 function selectRock() {
   const userChioce = "rock";
   userChoiceContainer.innerText = "Your choice : Rock (🪨)";
@@ -45,12 +45,13 @@ function checkWhoWon(usersChioce, computersChoice) {
     (usersChioce === "scissors" && computersChoice === "paper")
   ) {
     resultContainer.innerHTML = "Result: Cong. You won🎉!!";
+    //
   } else if (
     (computersChoice === "rock" && usersChioce === "scissors") ||
     (computersChoice === "paper" && usersChioce === "rock") ||
     (computersChoice === "scissors" && usersChioce === "paper")
   ) {
-    resultContainer.innerHTML = "Result : You Lost..😯";
+    resultContainer.innerHTML = "Result : You Lost..😯😭";
   } else {
     resultContainer.innerHTML = "Result : Draw 🫥";
  }
